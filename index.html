@@ -72,7 +72,7 @@ tailwind.config = {
     font-display: swap;
 }
 html { scroll-behavior: smooth; }
-body { font-family: 'Frutiger LT Arabic', 'Tajawal', sans-serif; color: #1E293B; background: #FFFFFF; overflow-x: hidden; }
+body { font-family: 'Frutiger LT Arabic', 'Tajawal', sans-serif; color: #1E293B; background: linear-gradient(135deg,#088F8F 0%,#065F5F 100%); overflow-x: hidden; }
 h1, h2, h3, h4 { font-family: 'Sakkal Majalla', 'Cairo', sans-serif; }
 section[id], footer[id] { scroll-margin-top: 90px; }
 ::selection { background: #DAA520; color: #1E293B; }
@@ -129,15 +129,15 @@ section[id], footer[id] { scroll-margin-top: 90px; }
 }
 </style>
 </head>
-<body class="bg-white text-[#1E293B] antialiased">
+<body class="text-[#1E293B] antialiased">
 
 <!-- ===== A. الشريط العلوي (Sticky Bar) ===== -->
-<header class="sticky top-0 z-50 bg-[#088F8F] text-white shadow-lg">
+<header class="sticky top-0 z-50 text-[#1E293B] bg-white shadow-[0_2px_20px_rgba(0,0,0,.08)] border-b border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-3">
     <div class="flex items-center gap-3 min-w-0">
-      <img src="logo.svg" alt="شعار إمكان تكنولوجي" class="h-11 w-auto shrink-0 brightness-0 invert">
+      <img src="logo.svg?v=2" alt="شعار إمكان تكنولوجي" class="h-11 w-auto shrink-0">
       <div class="min-w-0 hidden sm:block">
-        <div class="text-[12px] text-white/85 font-medium">خبراء <span dir="ltr">Power BI</span> وتحليل البيانات</div>
+        <div class="text-[12px] text-[#1E293B]/70 font-medium">خبراء <span dir="ltr">Power BI</span> وتحليل البيانات</div>
       </div>
     </div>
     <button type="button" data-open-modal aria-label="سجّل في الويبينار" class="btn-gold shrink-0 inline-flex items-center gap-2 bg-[#DAA520] text-[#1E293B] px-4 sm:px-5 py-2.5 rounded-full font-bold text-[13px] sm:text-sm">سجّل في الويبينار ←</button>
@@ -601,32 +601,32 @@ section[id], footer[id] { scroll-margin-top: 90px; }
 <div class="md:hidden h-[68px]" aria-hidden="true"></div>
 
 <!-- ===== Q. Footer ===== -->
-<footer class="bg-[#088F8F] text-white pt-14 pb-8" aria-label="تذييل الصفحة">
+<footer class="bg-[#F8FAFC] text-[#1E293B] border-t border-slate-200 pt-14 pb-8" aria-label="تذييل الصفحة">
   <div class="max-w-7xl mx-auto px-5 lg:px-8">
     <div class="grid md:grid-cols-3 gap-10">
       <div>
-        <img src="logo.svg" alt="شعار إمكان تكنولوجي" class="h-14 w-auto brightness-0 invert">
-        <p class="mt-3 text-white/90 text-[14px] leading-[2]">خبراء <span dir="ltr">Power BI</span> وتحليل البيانات – للتجارة الإلكترونية والتجارة الكلاسيكية</p>
+        <img src="logo.svg?v=2" alt="شعار إمكان تكنولوجي" class="h-14 w-auto">
+        <p class="mt-3 text-[#1E293B]/70 text-[14px] leading-[2]">خبراء <span dir="ltr">Power BI</span> وتحليل البيانات – للتجارة الإلكترونية والتجارة الكلاسيكية</p>
       </div>
       <nav aria-label="روابط">
         <div class="font-black mb-4">روابط</div>
-        <ul class="space-y-2 text-[14px] text-white/90">
-          <li><a href="#" aria-label="من نحن" class="hover:text-[#DAA520] transition">من نحن</a></li>
-          <li><a href="#" aria-label="سياسة الخصوصية" class="hover:text-[#DAA520] transition">سياسة الخصوصية</a></li>
-          <li><a href="#" aria-label="شروط الاستخدام" class="hover:text-[#DAA520] transition">شروط الاستخدام</a></li>
+        <ul class="space-y-2 text-[14px] text-[#1E293B]/70">
+          <li><a href="#" aria-label="من نحن" class="hover:text-[#088F8F] transition">من نحن</a></li>
+          <li><a href="#" aria-label="سياسة الخصوصية" class="hover:text-[#088F8F] transition">سياسة الخصوصية</a></li>
+          <li><a href="#" aria-label="شروط الاستخدام" class="hover:text-[#088F8F] transition">شروط الاستخدام</a></li>
         </ul>
       </nav>
       <div>
         <div class="font-black mb-4">تابعنا</div>
         <div class="flex gap-3">
-          <a href="https://www.facebook.com/share/1GoMh1EyyM/" aria-label="فيسبوك" class="w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center font-black">ف</a>
-          <a href="https://www.linkedin.com/company/imkanspace/" aria-label="لينكد إن" class="w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center font-black" dir="ltr">in</a>
-          <a href="https://imkan.tech/" aria-label="الموقع الرسمي" class="w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center font-black"> م ر </a>
-          <a href="https://www.instagram.com/imkan.technology?stkn=dTJsamY5dHZscnMz" aria-label="إنستغرام" class="w-10 h-10 rounded-full bg-white/15 hover:bg-white/25 flex items-center justify-center font-black">◎</a>
+          <a href="https://www.facebook.com/share/1GoMh1EyyM/" aria-label="فيسبوك" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition">ف</a>
+          <a href="https://www.linkedin.com/company/imkanspace/" aria-label="لينكد إن" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition" dir="ltr">in</a>
+          <a href="https://imkan.tech/" aria-label="الموقع الرسمي" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition"> م ر </a>
+          <a href="https://www.instagram.com/imkan.technology?stkn=dTJsamY5dHZscnMz" aria-label="إنستغرام" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition">◎</a>
         </div>
       </div>
     </div>
-    <div class="mt-10 pt-6 border-t border-white/20 text-center text-[13px] text-white/85">© <span dir="ltr">2026</span> إمكان تكنولوجي. جميع الحقوق محفوظة.</div>
+    <div class="mt-10 pt-6 border-t border-slate-200 text-center text-[13px] text-[#1E293B]/60">© <span dir="ltr">2026</span> إمكان تكنولوجي. جميع الحقوق محفوظة.</div>
   </div>
 </footer>
 
