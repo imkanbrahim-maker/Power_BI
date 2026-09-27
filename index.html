@@ -109,13 +109,6 @@ section[id], footer[id] { scroll-margin-top: 90px; }
 .field:focus { outline:none; border-color:#088F8F; box-shadow:0 0 0 4px rgba(8,143,143,.14); }
 .field-error { border-color:#D70040 !important; box-shadow:0 0 0 4px rgba(215,0,64,.12) !important; }
 
-/* FAQ */
-.faq-answer { display:grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }
-.faq-item.open .faq-answer { grid-template-rows: 1fr; }
-.faq-answer > div { overflow:hidden; }
-.faq-item.open .faq-chevron { transform: rotate(180deg); }
-.faq-chevron { transition: transform .3s ease; }
-
 /* Modal */
 #registerModal { transition: opacity .25s ease; }
 #registerModal.hidden-modal { opacity:0; pointer-events:none; }
@@ -166,7 +159,7 @@ section[id], footer[id] { scroll-margin-top: 90px; }
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <div class="fade-in">
         <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/25 text-[13px] font-bold mb-6"><span class="w-2 h-2 rounded-full bg-[#DAA520]"></span> ويبينار مباشر مجاني + هدية فورية 🎁</span>
-        <h1 class="text-[30px] sm:text-4xl lg:text-[44px] font-black leading-[1.8]">لوحة قيادة <span dir="ltr">Power BI</span> متصلة مباشرة ببرنامجك… تكشفلك الأرباح الحقيقية في 10 ثواني</h1>
+        <h1 class="text-[30px] sm:text-4xl lg:text-[44px] font-black leading-[1.8]">لوحة قيادة <span dir="ltr">Power BI</span> متصلة مباشرة ببرنامجك… تكشف لك الأرباح الحقيقية في 10 ثواني</h1>
         <h2 class="mt-5 text-[17px] lg:text-xl leading-[2.1] text-white/90 font-medium">سواء عندك تجارة إلكترونية ولا تجارة كلاسيكية (محل، خدمات، صناعة…)<br>وراك تخدّم بـ <span dir="ltr">LOGICOM</span> ولا <span dir="ltr">JAWAHIR</span> ولا <span dir="ltr">INABEX</span> ولا حتى بـ <span dir="ltr">Excel</span>…<br>وحاس بلي الأرقام ماهيش واضحة والأرباح ضائعة…<br>الويبينار المجاني هذا راه مخصص ليك.</h2>
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
           <button type="button" data-open-modal aria-label="سجّل في الويبينار المجاني" class="btn-gold flex-1 sm:flex-none inline-flex items-center justify-center gap-2 bg-[#DAA520] text-[#1E293B] px-8 py-4 rounded-2xl font-black text-lg">🎯 سجّل في الويبينار المجاني</button>
@@ -346,119 +339,6 @@ section[id], footer[id] { scroll-margin-top: 90px; }
   </div>
 </section>
 
-<!-- ===== G. اختر مسارك ===== -->
-<section class="bg-white py-16 lg:py-24" aria-label="اختر مسارك">
-  <div class="max-w-6xl mx-auto px-5 lg:px-8">
-    <h2 class="fade-in text-2xl sm:text-3xl lg:text-4xl font-black text-[#088F8F] text-center leading-[1.8]">واش تحتاج بالضبط؟</h2>
-    <div class="grid md:grid-cols-2 gap-6 mt-12">
-      <article class="fade-in bg-[#F8FAFC] rounded-3xl p-8 border border-slate-200 text-center">
-        <div class="w-16 h-16 mx-auto rounded-2xl bg-[#088F8F]/10 flex items-center justify-center text-3xl mb-5" aria-hidden="true">📊</div>
-        <h3 class="text-xl font-black">أحتاج لوحة قيادة جاهزة لنشاطي</h3>
-        <p class="mt-3 text-[15px] leading-[2]">نصممولك لوحة قيادة <span dir="ltr">Power BI</span> مخصصة لنشاطك ومربوطة ببرنامجك. تشوف أرقامك بوضوح من أول يوم. حل سريع وعملي.</p>
-        <a href="https://wa.me/213559777999" target="_blank" rel="noopener" aria-label="تواصل معانا على الواتساب" class="btn-gold mt-6 inline-flex items-center justify-center gap-2 bg-[#DAA520] text-[#1E293B] px-7 py-3.5 rounded-2xl font-black">تواصل معانا على الواتساب</a>
-      </article>
-      <article class="fade-in bg-[#F8FAFC] rounded-3xl p-8 border border-slate-200 text-center">
-        <div class="w-16 h-16 mx-auto rounded-2xl bg-[#088F8F]/10 flex items-center justify-center text-3xl mb-5" aria-hidden="true">🎓</div>
-        <h3 class="text-xl font-black">أحتاج نتعلم تحليل البيانات بنفسي</h3>
-        <p class="mt-3 text-[15px] leading-[2]">دورة 12 ساعة متخصصة في تحليل البيانات. تتعلم تقرأ الأرقام وتستعمل <span dir="ltr">Power BI</span> بيديك، انت ولا فريق العمل تاعك.</p>
-        <a href="#formation" aria-label="شوف محتوى الدورة" class="mt-6 inline-flex items-center justify-center gap-2 bg-[#DAA520] text-[#1E293B] px-7 py-3.5 rounded-2xl font-black hover:brightness-105 hover:-translate-y-0.5 transition">شوف محتوى الدورة</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== H. تفاصيل الدورة ===== -->
-<section id="formation" class="bg-[#F8FAFC] py-16 lg:py-24" aria-label="تفاصيل الدورة التكوينية">
-  <div class="max-w-4xl mx-auto px-5 lg:px-8">
-    <h2 class="fade-in text-2xl sm:text-3xl lg:text-4xl font-black text-[#088F8F] text-center leading-[1.8]">دورة تحليل البيانات – <span dir="ltr">12</span> ساعة</h2>
-    <p class="fade-in mt-4 text-center leading-[2] text-[16px]">نكوّنو ونأهّلو الأفراد وفرق العمل في تقنيات تحليل البيانات، باش يقراو الأرقام وياخذو القرارات الصحيحة في نشاطهم.</p>
-    <ol class="mt-10 space-y-4">
-      <li class="fade-in bg-white rounded-2xl p-5 border border-slate-200 flex gap-4"><span class="w-10 h-10 shrink-0 rounded-full bg-[#088F8F] text-white flex items-center justify-center font-black">①</span><span class="leading-[2]">الأساسيات: واش هو تحليل البيانات ولماذا هو مهم لنشاطك</span></li>
-      <li class="fade-in bg-white rounded-2xl p-5 border border-slate-200 flex gap-4"><span class="w-10 h-10 shrink-0 rounded-full bg-[#088F8F] text-white flex items-center justify-center font-black">②</span><span class="leading-[2]"><span dir="ltr">Power BI</span> من الصفر: تركيب، واجهة، رفع البيانات</span></li>
-      <li class="fade-in bg-white rounded-2xl p-5 border border-slate-200 flex gap-4"><span class="w-10 h-10 shrink-0 rounded-full bg-[#088F8F] text-white flex items-center justify-center font-black">③</span><span class="leading-[2]">ربط <span dir="ltr">Power BI</span> ببرنامج التسيير تاعك (<span dir="ltr">LOGICOM, JAWAHIR, ECOMANAGER</span>… ولا <span dir="ltr">Excel</span>)</span></li>
-      <li class="fade-in bg-white rounded-2xl p-5 border border-slate-200 flex gap-4"><span class="w-10 h-10 shrink-0 rounded-full bg-[#088F8F] text-white flex items-center justify-center font-black">④</span><span class="leading-[2]">بناء <span dir="ltr">Dashboards</span> احترافية: رسوم بيانية، جداول، مؤشرات أداء</span></li>
-      <li class="fade-in bg-white rounded-2xl p-5 border border-slate-200 flex gap-4"><span class="w-10 h-10 shrink-0 rounded-full bg-[#088F8F] text-white flex items-center justify-center font-black">⑤</span><span class="leading-[2]">تحليل الأرباح والهامش والمنتجات الأكثر مبيعاً</span></li>
-      <li class="fade-in bg-white rounded-2xl p-5 border border-slate-200 flex gap-4"><span class="w-10 h-10 shrink-0 rounded-full bg-[#088F8F] text-white flex items-center justify-center font-black">⑥</span><span class="leading-[2]">تقنيات متقدمة: <span dir="ltr">DAX</span>، التنبؤ بالمبيعات، مقارنة الفترات</span></li>
-      <li class="fade-in bg-white rounded-2xl p-5 border border-slate-200 flex gap-4"><span class="w-10 h-10 shrink-0 rounded-full bg-[#088F8F] text-white flex items-center justify-center font-black">⑦</span><span class="leading-[2]">مشروع تطبيقي نهائي: تبني لوحة قيادة كاملة لنشاطك</span></li>
-    </ol>
-    <div class="fade-in mt-8 bg-white rounded-3xl p-7 border border-slate-200">
-      <h3 class="font-black text-lg mb-4">مميزات الدورة:</h3>
-      <ul class="space-y-3 text-[15px] leading-[2]">
-        <li class="flex gap-2"><span class="text-[#088F8F] font-black">✓</span> تدريب عملي 100% (ماتجيش تسمع وتخرج — راح تطبق)</li>
-        <li class="flex gap-2"><span class="text-[#088F8F] font-black">✓</span> مناسبة للأفراد وفرق العمل (تكوين جماعي للمؤسسات متاح)</li>
-        <li class="flex gap-2"><span class="text-[#088F8F] font-black">✓</span> دعم ومتابعة بعد الدورة لمدة شهر كامل</li>
-        <li class="flex gap-2"><span class="text-[#088F8F] font-black">✓</span> شهادة إتمام من إمكان تكنولوجي</li>
-        <li class="flex gap-2"><span class="text-[#088F8F] font-black">✓</span> الأماكن محدودة لضمان جودة التكوين</li>
-      </ul>
-    </div>
-    <div class="text-center mt-8">
-      <button type="button" data-open-modal aria-label="سجّل في الويبينار باش تعرف أكثر على الخدمات" class="btn-gold inline-flex items-center justify-center gap-2 bg-[#DAA520] text-[#1E293B] px-8 py-4 rounded-2xl font-black text-lg">سجّل في الويبينار باش تعرف أكثر على الخدمات</button>
-    </div>
-  </div>
-</section>
-
-<!-- ===== I. شهادات العملاء ===== -->
-<section class="bg-white py-16 lg:py-24" aria-label="شهادات العملاء">
-  <div class="max-w-7xl mx-auto px-5 lg:px-8">
-    <h2 class="fade-in text-2xl sm:text-3xl lg:text-4xl font-black text-[#088F8F] text-center leading-[1.8]">شركاء نجاح وثقوا بخدماتنا…</h2>
-    <p class="fade-in mt-3 text-center text-[15px] sm:text-base font-bold text-[#1E293B]/60 leading-[2]">آراء وتجارب حقيقية من أصحاب مشاريع مثلك</p>
-    <div class="grid md:grid-cols-3 gap-6 mt-12">
-      <figure class="fade-in bg-[#F8FAFC] rounded-3xl overflow-hidden border border-slate-200">
-        <div class="h-2 bg-[#088F8F]"></div>
-        <div class="p-7">
-          <div class="w-16 h-14 rounded-2xl bg-[#088F8F]/10 flex items-center justify-center text-3xl mb-4" aria-hidden="true">👤</div>
-          <div class="text-[#DAA520] font-black tracking-wide" dir="ltr" aria-label="تقييم 5 نجوم">⭐⭐⭐⭐⭐</div>
-          <blockquote class="mt-4 text-[14px] leading-[2]">"كنت غارق في الطلبات والإرجاعات وما نعرفش شحال راني رابح بالصح. لوحة القيادة من إمكان تكنولوجي وضحتلي كلش: الربح الصافي بعد التوصيل والإرجاعات. اكتشفت منتجات كنت نخسر فيهم بلا ما نحس. هادي 3 شهور وأرباحي طالعين."</blockquote>
-          <figcaption class="mt-5 font-black text-sm">— كريم. ب، صاحب متجر إلكتروني (<span dir="ltr">ECOMANAGER</span>)</figcaption>
-        </div>
-      </figure>
-      <figure class="fade-in bg-[#F8FAFC] rounded-3xl overflow-hidden border border-slate-200">
-        <div class="h-2 bg-[#DAA520]"></div>
-        <div class="p-7">
-          <div class="w-16 h-14 rounded-2xl bg-[#DAA520]/10 flex items-center justify-center text-3xl mb-4" aria-hidden="true">👤</div>
-          <div class="text-[#DAA520] font-black tracking-wide" dir="ltr" aria-label="تقييم 5 نجوم">⭐⭐⭐⭐⭐</div>
-          <blockquote class="mt-4 text-[14px] leading-[2]">"الدورة كانت أحسن استثمار في نفسي. 12 ساعة تعلمت كيفاه نحلل أرقامي بنفسي. اليوم نعرف بالضبط واش راني يبيع، وكيفاش نتحكم فالمخزون. المدرب كان ممتاز ويوصلك المعلومة بطريقة بسيطة."</blockquote>
-          <figcaption class="mt-5 font-black text-sm">— أمينة. م، صاحبة محل ملابس (<span dir="ltr">LOGICOM</span>)</figcaption>
-        </div>
-      </figure>
-      <figure class="fade-in bg-[#F8FAFC] rounded-3xl overflow-hidden border border-slate-200">
-        <div class="h-2 bg-[#088F8F]"></div>
-        <div class="p-7">
-          <div class="w-16 h-14 rounded-2xl bg-[#088F8F]/10 flex items-center justify-center text-3xl mb-4" aria-hidden="true">👤</div>
-          <div class="text-[#DAA520] font-black tracking-wide" dir="ltr" aria-label="تقييم 5 نجوم">⭐⭐⭐⭐⭐</div>
-          <blockquote class="mt-4 text-[14px] leading-[2]">"تعاملت مع بزاف مكاتب، لكن فريق إمكان تكنولوجي هو اللي فهم نشاطي قبل ما يبني اللوحة. صمملي <span dir="ltr">Dashboard</span> على قد مؤسستي الخدماتية وربطها بـ <span dir="ltr">DOLIBARR</span> في وقت قياسي. أنصح بهم بقوة."</blockquote>
-          <figcaption class="mt-5 font-black text-sm">— رضا. ع، مسيّر مؤسسة خدمات (<span dir="ltr">DOLIBARR</span>)</figcaption>
-        </div>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ===== J. الويبينار المجاني ===== -->
-<section class="py-16 lg:py-24 text-white" style="background:linear-gradient(135deg,#088F8F 0%,#065F5F 100%)" aria-label="الويبينار المجاني">
-  <div class="max-w-4xl mx-auto px-5 lg:px-8 text-center">
-    <div class="fade-in text-6xl mb-4" aria-hidden="true">📡</div>
-    <h2 class="fade-in text-2xl sm:text-3xl lg:text-4xl font-black leading-[1.8]">واش راح تشوف في الويبينار المباشر؟</h2>
-    <div class="fade-in mt-8 grid sm:grid-cols-3 gap-4 text-right">
-      <div class="bg-white/10 border border-white/20 rounded-2xl p-5"><div class="font-black mb-1">🗓 التاريخ:</div><div class="text-sm text-white/90 leading-[2]">"التاريخ سيعلن قريباً – سجّل باش تكون أول من يعرف"</div></div>
-      <div class="bg-white/10 border border-white/20 rounded-2xl p-5"><div class="font-black mb-1">⏰ المدة:</div><div class="text-sm text-white/90 leading-[2]">45 دقيقة (30 دقيقة شرح مباشر + 15 دقيقة أسئلة وأجوبة)</div></div>
-      <div class="bg-white/10 border border-white/20 rounded-2xl p-5"><div class="font-black mb-1">📍 المكان:</div><div class="text-sm text-white/90 leading-[2]">أونلاين – رابط الدخول يوصلك على الإيميل والواتساب بعد التسجيل</div></div>
-    </div>
-    <div class="fade-in mt-8 bg-white/10 border border-white/20 rounded-3xl p-7 text-right">
-      <div class="font-black text-lg mb-4">"راح تشوف مباشرة":</div>
-      <ul class="space-y-3 text-[15px] leading-[2]">
-        <li>✅ عرض حي للوحة قيادة <span dir="ltr">Power BI</span> متصلة ببرنامج تسيير حقيقي</li>
-        <li>✅ عرض خاص للتجارة الإلكترونية: لوحة مربوطة بـ <span dir="ltr">ECOMANAGER</span></li>
-        <li>✅ كيفاش تكشف الأرباح الحقيقية في 10 ثواني فقط</li>
-        <li>✅ 3 أخطاء قاتلة في قراءة الأرقام يرتكبها أغلب أصحاب النشاطات</li>
-        <li>✅ حالات حقيقية لعملاء إمكان تكنولوجي (مع أرقام حية)</li>
-        <li>✅ حصرياً: عرض خاص للمشاركين في الويبينار فقط</li>
-      </ul>
-    </div>
-    <button type="button" data-open-modal aria-label="سجّل في الويبينار المجاني الآن" class="btn-gold fade-in mt-8 inline-flex items-center justify-center gap-2 bg-[#DAA520] text-[#1E293B] px-10 py-5 rounded-2xl font-black text-xl">🎯 سجّل في الويبينار المجاني الآن</button>
-  </div>
-</section>
-
 <!-- ===== K. الهدية الفورية ===== -->
 <section class="bg-white py-14 lg:py-20" aria-label="الهدية الفورية">
   <div class="max-w-4xl mx-auto px-5 lg:px-8">
@@ -467,47 +347,6 @@ section[id], footer[id] { scroll-margin-top: 90px; }
       <h2 class="text-2xl sm:text-3xl font-black text-[#088F8F] leading-[1.8]">بمجرد ما تسجل في الويبينار، توصلك هدية فورية</h2>
       <p class="mt-4 leading-[2]">فيديو حصري مدته 7 دقائق: '3 أخطاء في تحليل أرباح نشاطك وكيفاش تصلحهم اليوم'</p>
       <p class="mt-3 text-sm font-bold text-[#D70040]">هذا الفيديو خاص بالمشاركين المسجلين فقط. لن يُنشر على أي منصة.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ===== L. الأسئلة الشائعة ===== -->
-<section class="bg-[#F8FAFC] py-16 lg:py-24" aria-label="الأسئلة الشائعة">
-  <div class="max-w-3xl mx-auto px-5 lg:px-8">
-    <h2 class="fade-in text-2xl sm:text-3xl lg:text-4xl font-black text-[#088F8F] text-center leading-[1.8]">أسئلة تخطر على بال كل صاحب نشاط</h2>
-    <div class="mt-10 space-y-3" id="faqList">
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="واش الفرق بين لوحة القيادة والدورة؟">واش الفرق بين لوحة القيادة والدورة؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">لوحة القيادة هي <span dir="ltr">Dashboard</span> احترافية جاهزة نربطوها ببرنامجك وتشوف أرقامك فوراً. الدورة هي تكوين 12 ساعة تتعلم فيها تبني لوحات القيادة بنفسك. إذا تحب حل سريع ومباشر ← اللوحة الجاهزة. إذا تحب تستثمر في مهارة تدوم ← الدورة.</p></div></div>
-      </div>
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="واش لوحة القيادة تشتغل مع البرنامج اللي نخدم بيه؟">واش لوحة القيادة تشتغل مع البرنامج اللي نخدم بيه؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">إيه، نربطوها مع <span dir="ltr">LOGICOM, JAWAHIR, INABEX, INTELLIX, WMANAGER, DOLIBARR, ICASH</span>، ومع <span dir="ltr">ECOMANAGER</span> للتجارة الإلكترونية. وإذا تخدم بـ <span dir="ltr">Excel</span> برك، حتى هو نربطوه ونتحكمو فيه. تخدم ببرنامج آخر؟ تواصل معانا ونشوفو الإمكانية.</p></div></div>
-      </div>
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="أنا نخدم في قطاع الخدمات / الصناعة، ماشي تجارة. واش يخصني الحل؟">أنا نخدم في قطاع الخدمات / الصناعة، ماشي تجارة. واش يخصني الحل؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">أكيد يخصك. لوحة القيادة تتخصص عل حساب طبيعة نشاطك: محلات، خدمات، صناعة، توزيع… المهم أنه عندك أرقام تحب تفهمها وتاخذ قرارات على أساسها. إمكان تكنولوجي تخدم مع كل القطاعات.</p></div></div>
-      </div>
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="قداش تكلف لوحة القيادة؟">قداش تكلف لوحة القيادة؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">السعر يختلف حسب حجم نشاطك وعدد المؤشرات والبرنامج المستعمل. في الويبينار راح نعطيوك عرضاً خاصاً وحصرياً للمشاركين فقط. سجّل باش تعرف التفاصيل.</p></div></div>
-      </div>
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="هل الدورة أونلاين ولا حضورية؟">هل الدورة أونلاين ولا حضورية؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">الدورة أونلاين مباشرة (<span dir="ltr">Live</span>) مع المدرب، تتفاعل وتسأل في الوقت الفعلي، وترجع تشوف التسجيل لاحقاً متى حبيت. للمؤسسات وفرق العمل، نقترحو تكويناً مخصصاً حسب احتياجاتكم.</p></div></div>
-      </div>
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="إذا ما فهمتش حاجة بعد الدورة، هل من متابعة؟">إذا ما فهمتش حاجة بعد الدورة، هل من متابعة؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">طبعاً. عندك دعم ومتابعة لمدة شهر كامل بعد الدورة على واتساب مع المدرب مباشرة. ماتخرجش من الدورة وحدك.</p></div></div>
-      </div>
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="كم من وقت تلزم باش تركّبو اللوحة وتكون جاهزة؟">كم من وقت تلزم باش تركّبو اللوحة وتكون جاهزة؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">المدة تختلف حسب البرنامج اللي تخدّم بيه وحجم بياناتك، لكن غالباً تكون اللوحة جاهزة ومربوطة في وقت قياسي. كل شيء يتم عن بعد بدون ما تحتاج توقف نشاطك.</p></div></div>
-      </div>
-      <div class="faq-item fade-in bg-white rounded-2xl border border-slate-200 overflow-hidden">
-        <button type="button" class="faq-toggle w-full flex items-center justify-between gap-4 p-5 font-black text-right text-[15px]" aria-expanded="false" aria-label="واش نستفيد من الويبينار إذا ما قدرتش نحضر مباشر؟">واش نستفيد من الويبينار إذا ما قدرتش نحضر مباشر؟ <span class="faq-chevron shrink-0 w-8 h-8 rounded-full bg-[#088F8F]/10 text-[#088F8F] flex items-center justify-center">⤵</span></button>
-        <div class="faq-answer"><div><p class="px-5 pb-5 text-[14px] leading-[2]">كل من يسجل في الويبينار (حتى إذا ما حضرش مباشر) توصله إعادة كاملة + الهدية الفورية + العرض الخاص. لكن ننصحك تحضر مباشر باش تسأل أسئلتك وتاخذ إجابة فورية.</p></div></div>
-      </div>
     </div>
   </div>
 </section>
@@ -634,10 +473,18 @@ section[id], footer[id] { scroll-margin-top: 90px; }
       <div>
         <div class="font-black mb-4">تابعنا</div>
         <div class="flex gap-3">
-          <a href="https://www.facebook.com/share/1GoMh1EyyM/" aria-label="فيسبوك" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition">ف</a>
-          <a href="https://www.linkedin.com/company/imkanspace/" aria-label="لينكد إن" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition" dir="ltr">in</a>
-          <a href="https://imkan.tech/" aria-label="الموقع الرسمي" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition"> م ر </a>
-          <a href="https://www.instagram.com/imkan.technology?stkn=dTJsamY5dHZscnMz" aria-label="إنستغرام" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center font-black transition">◎</a>
+          <a href="https://www.facebook.com/share/1GoMh1EyyM/" aria-label="فيسبوك" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/imkanspace/" aria-label="لينكد إن" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+          </a>
+          <a href="https://imkan.tech/" aria-label="الموقع الرسمي" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93C7.05 19.44 4 16.08 4 12c0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/imkan.technology?stkn=dTJsamY5dHZscnMz" aria-label="إنستغرام" class="w-10 h-10 rounded-full bg-[#088F8F]/10 hover:bg-[#088F8F]/20 text-[#088F8F] flex items-center justify-center transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -712,21 +559,6 @@ const CONTACT_EMAIL = '[الإيميل]'; // ← [5]
     }, { threshold: 0.12 });
     fadeEls.forEach(function (el) { io.observe(el); });
   }
-
-  /* ---------- FAQ Accordion ---------- */
-  document.querySelectorAll('.faq-item').forEach(function (item) {
-    var btn = item.querySelector('.faq-toggle');
-    if (!btn) return;
-    btn.addEventListener('click', function () {
-      var isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function (o) {
-        o.classList.remove('open');
-        var b = o.querySelector('.faq-toggle');
-        if (b) b.setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
-    });
-  });
 
   /* ---------- Modal ---------- */
   var modal = document.getElementById('registerModal');
