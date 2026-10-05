@@ -115,19 +115,6 @@ section[id], footer[id] { scroll-margin-top: 90px; }
 #registerModal .modal-card { transition: transform .3s cubic-bezier(.2,.7,.3,1), opacity .3s; }
 #registerModal.hidden-modal .modal-card { transform: translateY(24px) scale(.98); opacity:0; }
 
-/* إخفاء شريط التحكم / التقدم في الفيديو نهائياً */
-#demoVideo.no-controls::-webkit-media-controls,
-#demoVideo.no-controls::-webkit-media-controls-panel,
-#demoVideo.no-controls::-webkit-media-controls-timeline,
-#demoVideo.no-controls::-webkit-media-controls-current-time-display,
-#demoVideo.no-controls::-webkit-media-controls-time-remaining-display,
-#demoVideo.no-controls::-webkit-media-controls-play-button,
-#demoVideo.no-controls::-webkit-media-controls-volume-slider,
-#demoVideo.no-controls::-webkit-media-controls-mute-button,
-#demoVideo.no-controls::-webkit-media-controls-fullscreen-button { display: none !important; }
-#demoVideo.no-controls::-webkit-media-controls-enclosure { display: none !important; }
-#demoVideo.no-controls { pointer-events: none; }
-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
@@ -305,10 +292,7 @@ section[id], footer[id] { scroll-margin-top: 90px; }
         <span class="text-[12px] bg-[#DAA520] text-[#1E293B] px-3 py-1 rounded-full font-black" dir="ltr">LIVE</span>
       </div>
       <div class="relative bg-black">
-        <video id="demoVideo" class="w-full aspect-video object-contain bg-black no-controls" src="test%201.mp4" autoplay muted loop playsinline preload="auto" disablepictureinpicture controlsList="nodownload noplaybackrate noremoteplayback">
-          <source src="test%201.mp4" type="video/mp4">
-          متصفحك لا يدعم تشغيل الفيديو.
-        </video>
+        <img class="w-full aspect-video object-contain bg-black" src="dashboard_powerbi_click.gif" alt="عرض متحرك للوحة قيادة Power BI">
       </div>
     </div>
   </div>
@@ -499,22 +483,6 @@ const CONTACT_EMAIL = '[الإيميل]'; // ← [5]
 (function () {
   'use strict';
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* ---------- تشغيل فيديو العرض تلقائياً وبدون توقف (loop) ---------- */
-  var demoVideo = document.getElementById('demoVideo');
-  if (demoVideo) {
-    demoVideo.muted = true;
-    demoVideo.loop = true;
-    var tryPlayDemo = function () { var p = demoVideo.play(); if (p && p.catch) { p.catch(function () {}); } };
-    tryPlayDemo();
-    demoVideo.addEventListener('canplay', tryPlayDemo);
-    demoVideo.addEventListener('ended', function () { demoVideo.currentTime = 0; tryPlayDemo(); });
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) { if (e.isIntersecting) { tryPlayDemo(); } });
-      }, { threshold: 0.25 }).observe(demoVideo);
-    }
-  }
 
   /* ---------- عداد تنازلي حقيقي ---------- */
   var target = new Date(WEBINAR_DATE).getTime();
